@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub PR status highlighter",
+  "version": "1.1",
+
+  "description": "Highlights GitHub PRs based on status.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["gh-highlighter.js"]
+    }
+  ],
+  "icons": {
+    "48": "github-logo.png",
+    "96": "github-logo.png"
+  }
+}

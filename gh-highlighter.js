@@ -3,13 +3,13 @@
 
 function prHighlight() {
     $('div[id^=issue_]').each(function(index, element) {
-        if ($(element).find('a.muted-link:contains("Approved")').length) {
+        if ($(element).find('a.Link--muted:contains("Approved")').length) {
             $(element).css('background', '#dff0d8');
         }
-        if ($(element).find('a.muted-link:contains("Review required")').length) {
+        if ($(element).find('a.Link--muted:contains("Review required")').length) {
             $(element).css('background', '#fcf8e3');
         }
-        if ($(element).find('a.muted-link:contains("Changes requested")').length) {
+        if ($(element).find('a.Link--muted:contains("Changes requested")').length) {
             $(element).css('background', '#f2dede');
         }
     });
